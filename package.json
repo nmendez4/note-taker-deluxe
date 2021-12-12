@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/nmendez4/note-taker-deluxe",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "inquirer": "8.2.0",
+    "mysql": "2.18.1",
+    "path": "0.12.7"
   },
-  "scripts": {
+  "scripts":{
     "start": "node server.js"
   }
 }
