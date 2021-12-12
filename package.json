@@ -1,14 +1,25 @@
 {
-  "name": "note-taker",
+  "name": "note-taker-deluxe",
   "version": "1.0.0",
-  "description": "",
+  "description": "note taker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmendez4/note-taker-deluxe/"
+  },
+  "author": "Nicholas Mendez",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmendez4/note-taker-deluxe/issues"
+  },
+  "homepage": "https://github.com/nmendez4/note-taker-deluxe",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
