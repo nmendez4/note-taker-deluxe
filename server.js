@@ -2,6 +2,8 @@
 const express = require ('express');
 const path = require('path');
 const fs = require('fs');
+const apiroutes = require('./routes/apiroutes');
+const htmlroutes = require('./routes/htmlroutes');
 
 // creats app as express erver
 const app = express();
@@ -15,9 +17,10 @@ app.use(express.static('public'));
 
 // directs the server to route files
 // one directs to the html and the other to the api
-require('./routes/apiroutes')(app);
-require('./routes/htmlroutes')(app);
+app.use('/api', apiroutes);
+app.use('/', htmlroutes);
 
 // app listener
-app.listen(PORT, () => 
-console.log(`Server is listening on PORT: ${PORT}`)); 
+app.listen(PORT, function() {
+    console.log(`Server listening on PORT: ${PORT}`);
+});
