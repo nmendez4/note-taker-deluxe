@@ -14,7 +14,7 @@ module.exports = function(app) {
 
     // API post request(s)
     // handles a users submissions from the page, to send to the server
-    app.post('/api/notes', function (req,res) {
+    app.post('/api/notes', function (req, res) {
         fs.writeFile('./db/db.json', (err, data) => {
             if (err) throw err;
             dbData = JSON.parse(data);
@@ -29,7 +29,7 @@ module.exports = function(app) {
 
             stringData = JSON.stringify(dbData);
 
-            fs.writeFile('./db/db.json', stringData, (err,data) => {
+            fs.writeFile('/db/db.json', stringData, (err,data) => {
                 if (err) throw err;
             });
         });
@@ -43,7 +43,7 @@ module.exports = function(app) {
         // retrieves id number of note user wants to delete
         const deleteNote = req.params.id;
         console.log(deleteNote);
-        fs.readFile('./db/db.json', (err, data) => {
+        fs.readFile('/db/db.json', (err, data) => {
             if (err) throw err;
 
             dbData = JSON.parse(data);
@@ -57,7 +57,7 @@ module.exports = function(app) {
             console.log(dbData);
             stringData = JSON.stringify(dbData);
 
-            fs.writeFile('./db/db.json', stringData, (err, data) => {
+            fs.writeFile('/db/db.json', stringData, (err, data) => {
                 if (err) throw err;
             });
         });

@@ -1,0 +1,17 @@
+[
+    {
+        "title": "test1",
+        "body": "test1",
+        "journal": "test1"
+    },
+    {
+        "title": "hello world?",
+        "body": "hello world!",
+        "journal": "hello world-!"
+    },
+    {
+        "title": "knock knock",
+        "body": "whos there",
+        "journal": "its me a mario"
+    }
+]
