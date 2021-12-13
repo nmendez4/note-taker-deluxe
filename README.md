@@ -27,7 +27,7 @@ Node.js, Express.js
 Please download the application from my GitHub and have Node.js and Express.js to use this application
   
 ### Screenshots
-![Screenshot](screenshot.png)
+![Screenshot](/images/screenshot.png)
 image
 
 ## Built With
